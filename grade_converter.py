@@ -1,8 +1,8 @@
 # FILE NAME - grade_converter.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Nicholas Thurston
+# DATE: 2/26/2026
+# BRIEF DESCRIPTION: Grade Converter
 
 
 
@@ -17,17 +17,19 @@
 
 print('===== Grade Converter =====')
 
+# Ask user for a number
 percent = int(input('Enter a numerical grade (1-100): '))
 
+# Calculate grade
 if percent > 100:
     print('A+')
-elif percent >= 90:
+elif percent >= 90 and percent <= 100:
     print('A')
-elif percent >= 80:
+elif percent in range(80,90):
     print('B')
-elif percent >= 70:
+elif percent in range(70,80):
     print('C')
-elif percent >= 65:
+elif percent in range(65,70):
     print('D')
 else:
     print('F')
@@ -86,7 +88,7 @@ D
    doing this lab?
 
 
-
+Pay close attention to the logic in the lab and test it.
 
 
 
